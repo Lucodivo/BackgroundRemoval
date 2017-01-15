@@ -1,9 +1,11 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.CvType;
 import org.opencv.core.Scalar;
+import org.opencv.imgcodecs.Imgcodecs;
 
 import java.util.StringTokenizer;
 
@@ -19,7 +21,6 @@ import java.util.StringTokenizer;
  *      \*locationOfOpenCVFolder*\opencv\build\java\x64
  */
 public class OpenCVTest {
-
     // This will be main source of error if OpenCV isn't installed properly
     static{ System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
 
@@ -50,5 +51,4 @@ public class OpenCVTest {
         mc5.setTo(new Scalar(5));
         System.out.println("OpenCV Mat data:\n" + m.dump());
     }
-
 }
